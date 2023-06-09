@@ -1,0 +1,19 @@
+#tarjeta {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  /*Se amplia un poco la tarjeta y le sale sombra*/
+  div.card:hover {
+    transform: scale(1.07);
+    transition: 200ms all;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 255, 0.1);
+    box-shadow: 0px 0px 30px 5px rgba(0, 255, 0, 0.2);
+    box-shadow: 0px 0px 30px 5px rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 0, 0.4);
+    box-shadow: 0px 0px 30px 5px rgba(255, 0, 255, 0.5);
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.6);
+  }
+  /*Para cuando salimos de la tarjeta, se anime al contrario*/
+  div.card {
+    transition: 200ms all;
+  }

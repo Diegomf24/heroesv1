@@ -1,0 +1,26 @@
+<main class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <div class="card sombra-multicolor">
+                <img class="card-img-bottom" src="/assets/static/img/banner-super.png" alt="Banner de la tarjeta" />
+                <h3 class="card-title p-2 text-center">Lista de héroes</h3>
+                <div class="card-body text-center">
+                    <div *ngIf="hayHeroes()">
+                        <ng-container *ngFor="let super of listadoHeroes;">
+                            <div class="container card">
+                                    <p>
+                                        {{super | json}}, y les queda de vida: {{super.vida}}/100px
+                                    </p>
+                            </div>
+                        </ng-container>    
+                    </div>
+                    <div *ngIf="!hayHeroes()" class="alert alert-danger">
+                        <span>No hay héroes todavía en la lista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</main>
